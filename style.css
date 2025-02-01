@@ -23,7 +23,7 @@ header {
 /* Navigation Styles */
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     background: #FFD700;
     padding: 10px;
     flex-wrap: wrap;  /* Ensures it looks good on small screens */
