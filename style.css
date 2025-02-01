@@ -128,7 +128,19 @@ nav a:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+/* Centered & Even Order Form */
+.order-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff8e1;
+    border-radius: 12px;
+    border: 2px solid #ff9800;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
+/* Form Title */
 .order-form h2 {
     color: #ff9800;
     margin-bottom: 20px;
@@ -136,57 +148,72 @@ nav a:hover {
     font-weight: bold;
 }
 
+/* Form Labels */
 .order-form label {
     display: block;
     font-weight: bold;
     color: #5D4037;
     text-align: left;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
+/* Input Fields */
 .order-form input,
 .order-form textarea,
 .order-form select {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     margin-bottom: 15px;
     border: 2px solid #ff9800;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 16px;
     background: #fffaf3;
     transition: all 0.3s ease-in-out;
 }
 
+/* Focus Effect */
 .order-form input:focus,
 .order-form textarea:focus,
 .order-form select:focus {
     border-color: #ff9800;
     outline: none;
-    box-shadow: 0 0 8px rgba(255, 152, 0, 0.3);
+    box-shadow: 0 0 10px rgba(255, 152, 0, 0.3);
 }
 
+/* Textarea Styling */
 .order-form textarea {
-    resize: none;
-    height: 80px;
+    resize: vertical;
+    height: 100px;
 }
 
+/* Submit Button */
 .order-form button {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     background: #ff9800;
     color: white;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     transition: background 0.3s, transform 0.2s;
 }
 
+/* Hover Effect */
 .order-form button:hover {
     background: #e68900;
     transform: scale(1.05);
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .order-form {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
 
 /* Footer */
 footer {
