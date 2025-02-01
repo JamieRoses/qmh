@@ -7,18 +7,6 @@ body {
     color: #333;
 }
 
-
-/* Header Styles */
-header {
-    background: linear-gradient(to right, #ff9800, #ffb300);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
 /* Fixed Navigation Bar */
 /* Navigation Styles */
 nav {
