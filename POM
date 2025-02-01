@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango Delight - Fresh Mangoes & More</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<style>
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8e1;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, #ff9800, #ffb300);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #FFD700;
+    padding: 10px;
+    flex-wrap: wrap;  /* Ensures it looks good on small screens */
+}
+
+nav a {
+    color: #5D4037;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background: #ff9800;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('mango-banner.jpg') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 152, 0, 0.6);
+}
+
+.hero h1 {
+    position: relative;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Menu Section */
+.menu {
+    text-align: center;
+    padding: 50px;
+    background: #FFF3E0;
+}
+
+.menu h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff9800;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-item {
+    background: #4CAF50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item h3 {
+    margin-top: 10px;
+    color: #FFF;
+}
+
+/* Order Form Section */
+.order-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff8e1;
+    border-radius: 10px;
+    border: 2px solid #ff9800;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.order-form h2 {
+    color: #ff9800;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.order-form label {
+    display: block;
+    font-weight: bold;
+    color: #5D4037;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.order-form input,
+.order-form textarea,
+.order-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ff9800;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #fffaf3;
+    transition: all 0.3s ease-in-out;
+}
+
+.order-form input:focus,
+.order-form textarea:focus,
+.order-form select:focus {
+    border-color: #ff9800;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 152, 0, 0.3);
+}
+
+.order-form textarea {
+    resize: none;
+    height: 80px;
+}
+
+.order-form button {
+    width: 100%;
+    padding: 12px;
+    background: #ff9800;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.order-form button:hover {
+    background: #e68900;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #5D4037, #FFB300);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-weight: bold;
+}
+
+
+</style>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        Mango Tapioca Fusion 🍋 - Fresh Mangoes & More
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="another-page.html" class="btn">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#order">Order Now</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Cool, creamy, and bursting with flavor— Mango tapioca is the treat that takes you away!</h1>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Our Special Mango Dishes</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="LOGO.png" alt="Mango Juice">
+                <h3>Mango Juice</h3>
+            </div>
+            <div class="menu-item">
+                <img src="LOGO.png" alt="Mango Ice Cream">
+                <h3>Mango Ice Cream</h3>
+            </div>
+            <div class="menu-item">
+                <img src="LOGO.png" alt="Fresh Mangoes">
+                <h3>Fresh Mangoes</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section id="order" class="order-form">
+        <h2>Order Now</h2>
+        <form action="https://formspree.io/f/xjkgwqzo" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Delivery Address</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <label for="order">Select Your Order</label>
+            <select id="order" name="order">
+                <option value="Mango Juice">Mango Juice</option>
+                <option value="Mango Ice Cream">Mango Ice Cream</option>
+                <option value="Fresh Mangoes">Fresh Mangoes</option>
+            </select>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>📍 Location: 1240 Concepcion St, Sampaloc, Manila, 1008 Metro Manila 🍋</p>
+        <p>📞 Contact: 956 239 1437 | ✉ Email: MangoTapiocaFusion@gmail.com</p>
+        <p>© 2025 Mango Tapioca Fusion. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
