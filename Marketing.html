@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango Delight - Fresh Mangoes & More</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        Mango Tapioca Fusion 🍋 - Fresh Mangoes & More
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="another-page.html" class="btn">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#order">Order Now</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Cool, creamy, and bursting with flavor— Mango tapioca is the treat that takes you away!</h1>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Our Special Mango Dishes</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="LOGO.png" alt="Mango Juice">
+                <h3>Mango Juice</h3>
+            </div>
+            <div class="menu-item">
+                <img src="LOGO.png" alt="Mango Ice Cream">
+                <h3>Mango Ice Cream</h3>
+            </div>
+            <div class="menu-item">
+                <img src="LOGO.png" alt="Fresh Mangoes">
+                <h3>Fresh Mangoes</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section id="order" class="order-form">
+        <h2>Order Now</h2>
+        <form action="https://formspree.io/f/xjkgwqzo" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Delivery Address</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <label for="order">Select Your Order</label>
+            <select id="order" name="order">
+                <option value="Mango Juice">Mango Juice</option>
+                <option value="Mango Ice Cream">Mango Ice Cream</option>
+                <option value="Fresh Mangoes">Fresh Mangoes</option>
+            </select>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>📍 Location: 1240 Concepcion St, Sampaloc, Manila, 1008 Metro Manila 🍋</p>
+        <p>📞 Contact: 956 239 1437 | ✉ Email: MangoTapiocaFusion@gmail.com</p>
+        <p>© 2025 Mango Tapioca Fusion. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
