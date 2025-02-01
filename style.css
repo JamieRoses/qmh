@@ -37,7 +37,6 @@ nav {
     background: #FFD700;
     padding: 10px;
     flex-wrap: wrap;  /* Ensures it looks good on small screens */
-    position: fixed;
 }
 
 nav a {
