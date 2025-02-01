@@ -149,7 +149,7 @@ nav a:hover {
 .order-form input,
 .order-form textarea,
 .order-form select {
-    width: 100%;
+    width: 80%;
     padding: 14px;
     margin-bottom: 15px;
     border: 2px solid #ff9800;
