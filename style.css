@@ -119,21 +119,52 @@ nav {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
 }
 
-/* Responsive Image */
+/* Menu Item Image Styling */
 .menu-item img {
     width: 100%;
     max-width: 250px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Add transition */
 }
 
+/* Hover Effect on Menu Item */
+.menu-item:hover img {
+    transform: translateY(-100%); /* Slide the image up */
+    opacity: 0; /* Fade out the image */
+}
+
+/* Description Text Styling (Initially Hidden and Centered) */
+.menu-item .description {
+    position: absolute;
+    top: 50%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Precisely center */
+    padding: 20px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Show Description on Hover */
+.menu-item:hover .description {
+    opacity: 1;
+    transform: translate(-50%, -50%); /* Keep it centered even when visible */
+}
+
+/* Menu Item Title */
 .menu-item h3 {
     margin-top: 10px;
     color: #FFF;
 }
+
 
 /* Order Form Section */
 .order-form {
