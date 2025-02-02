@@ -172,6 +172,9 @@ nav {
     color: #FFF;
 }
 
+.order {
+background: url('mango.png') center/cover no-repeat;
+}
 
 /* Order Form Section */
 .order-form {
