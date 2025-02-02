@@ -66,51 +66,22 @@ nav {
 /* Hero Section */
 .hero {
     background: url('paris.jpg') center/cover no-repeat;
-    height: 600px;  /* Enlarged height for the hero section */
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: relative;
     width: 100%;
-    padding: 0 20px; /* Add padding for responsiveness */
 }
 
-.hero-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px; /* Limit the width of the content */
-    width: 100%;
-}
-
-.hero-image img {
-    width: 50%; /* Adjust image width */
-    max-height: 400px; /* Ensure image height doesn't exceed the container */
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.hero-description {
-    width: 45%; /* Adjust description width */
-    color: white;
-    margin-left: 20px; /* Space between image and description */
-}
-
-.hero-description h1 {
+.hero h1 {
     font-size: 36px;
     font-weight: bold;
+    color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
 }
-
-.hero-description p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-top: 15px;
-}
-
-
 
 /* Menu Section */
 .menu {
