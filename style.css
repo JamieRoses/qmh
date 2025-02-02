@@ -1,3 +1,4 @@
+<style>
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -28,9 +29,9 @@ nav {
 }
 
 .nav-logo img {
-    height: 50px;  /* Adjust logo size */
+    height: 50px;  
     width: auto;
-    margin-right: 10px; /* Space between logo and text */
+    margin-right: 10px; 
 }
 
 .brand-name {
@@ -42,12 +43,11 @@ nav {
 /* Navigation Links */
 .nav-links {
     display: flex;
-        gap: 20px;  /* Adds even spacing between links */
+    gap: 20px;  
     align-items: center;
-    margin-right: 20px; /* Ensures links don't stick too far to the right */
-
-
+    margin-right: 20px; 
 }
+
 .nav-links a {
     color: #5D4037;
     text-decoration: none;
@@ -63,35 +63,37 @@ nav {
     border-radius: 5px;
 }
 
+/* ✅ Fixed Hero Section */
 .hero {
     background: url('mango.png') center/cover no-repeat;
     height: 600px;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
 }
 
-        .hero h1 {
-            font-size: 36px;
-            font-weight: bold;
-            color: white;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            margin: 0; /* Removes default margin */
-            width: 100%;
-        }
+.hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 0;
+    width: 80%;
+}
 
-        .hero h4 {
-            font-weight: bold;
-            color: white;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            margin-top: 10px; /* Adds space below h1 */
-            width: 100%;
-        }
+.hero h5 {
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin-top: 15px;
+    width: 80%;
+    text-align: center;
+}
 
 /* Menu Section */
 .menu {
@@ -122,7 +124,6 @@ nav {
     overflow: hidden;
 }
 
-/* Menu Item Image Styling */
 .menu-item img {
     width: 100%;
     max-width: 250px;
@@ -159,9 +160,6 @@ nav {
 }
 
 
-
-
-
 /* Show Description on Hover */
 .menu-item:hover .description {
     opacity: 1;
@@ -174,18 +172,6 @@ nav {
     color: #FFF;
 }
 
-
-/* Order Form Section */
-.order-form {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 30px;
-    background: #fff8e1;
-    border-radius: 10px;
-    border: 2px solid #ff9800;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
 /* Centered & Even Order Form */
 .order-form {
     max-width: 600px;
@@ -215,7 +201,6 @@ nav {
     margin-bottom: 8px;
 }
 
-/* Input Fields */
 .order-form input,
 .order-form textarea,
 .order-form select {
@@ -272,7 +257,6 @@ nav {
         padding: 20px;
     }
 }
-
 
 /* Footer */
 footer {
