@@ -1,3 +1,4 @@
+<style>
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -137,19 +138,29 @@ nav {
     opacity: 0; /* Fade out the image */
 }
 
-/* Description Text Styling (Initially Hidden and Centered) */
 .menu-item .description {
     position: absolute;
-    top: 50%; /* Vertically center */
-    left: 50%; /* Horizontally center */
-    transform: translate(-50%, -50%); /* Precisely center */
-    padding: 20px;
+    top: 45%; 
+    left: 50%; 
+    right: 50%; 
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 13px;
-    text-align: center;
+    font-size: 17px;
+    text-align: center; /* Justify the text */
+    padding: 20px; /* Increase padding for more space */
+    width: 90%; /* Increase width to fit more text */
+    height: auto; /* Allow it to expand as needed */
+    border-radius: 10px; /* Slightly rounded edges for a cleaner look */
     opacity: 0;
     transition: opacity 0.5s ease, transform 0.5s ease;
+    font-family: 'Poppins', sans-serif; /* Consistent with the website font */
+    font-weight: 500; /* Slightly bolder for better contrast */
+    line-height: 1.6; /* Increase line height for readability */
 }
+
+
+
+
 
 /* Show Description on Hover */
 .menu-item:hover .description {
