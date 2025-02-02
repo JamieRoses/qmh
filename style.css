@@ -140,6 +140,8 @@ nav {
 /* Description Text Styling (Initially Hidden and Centered) */
 .menu-item .description {
     position: absolute;
+    top: 50%; /* Vertically center */
+    left: 50%; /* Horizontally center */
     transform: translate(-50%, -50%); /* Precisely center */
     padding: 20px;
     color: white;
