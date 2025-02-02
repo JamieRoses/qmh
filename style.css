@@ -83,6 +83,15 @@ nav {
     padding: 10px;
 }
 
+.hashtags p {
+    font-size: 14px;  /* Makes the hashtags smaller */
+    color: white;  /* Keeps the text color white */
+    font-weight: normal;  /* Lighter weight for the hashtags */
+    margin-top: 10px;  /* Adds a bit of space between the title and the hashtags */
+    text-align: center;  /* Centers the hashtags */
+}
+
+
 /* Menu Section */
 .menu {
     text-align: center;
