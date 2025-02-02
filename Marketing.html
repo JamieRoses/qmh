@@ -5,26 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mango Fusion - Fresh Mangoes & More</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script> <!-- JavaScript for Mobile Menu -->
 </head>
 
 <body>
 
-        <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav>
         <div class="nav-logo">
             <img src="LOGO.png" alt="Mango Fusion Logo">
             <span class="brand-name">Mango Fusion</span>
         </div>
+        
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        
         <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Menu</a>
-            <a href="#">Order</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#order">Order</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="home" class="hero">
         <h1>Cool, creamy, and bursting with flavor— Mango tapioca is the treat that takes you away!</h1>
     </section>
 
@@ -63,17 +67,17 @@
             <label for="address">Delivery Address</label>
             <textarea id="address" name="address" rows="3" required></textarea>
 
-            <label for="order"> Drink </label>
-            <select id="order" name="order">
+            <label for="drink">Drink</label>
+            <select id="drink" name="drink">
                 <option value="Mango">Mango Drink</option>
             </select>
 
-            <label for="order"> Toppings </label>
-            <select id="order" name="order">
+            <label for="toppings">Toppings</label>
+            <select id="toppings" name="toppings">
                 <option value="Tapioca">Tapioca</option>
                 <option value="Nata De Coco">Nata De Coco</option>
-                <option value="Crushed oreo">Crushed oreo</option>
-                <option value="Crushed graham">Crushed graham</option>
+                <option value="Crushed Oreo">Crushed Oreo</option>
+                <option value="Crushed Graham">Crushed Graham</option>
                 <option value="Marshmallows">Marshmallows</option>
                 <option value="None">None</option>
             </select>
@@ -88,6 +92,13 @@
         <p>📞 Contact: 123 456 7891 | ✉ Email: MangoTapiocaFusion@gmail.com</p>
         <p>© 2025 Mango Tapioca Fusion. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        // Toggle Mobile Menu
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
 
 </body>
 </html>
