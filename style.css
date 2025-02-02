@@ -63,15 +63,14 @@ nav {
     border-radius: 5px;
 }
 
-/* Hero Section */
 .hero {
     background: url('mango.png') center/cover no-repeat;
     height: 600px;
     display: flex;
+    flex-direction: column; /* Stack elements vertically */
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: relative;
     width: 100%;
 }
 
