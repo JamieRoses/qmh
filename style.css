@@ -42,8 +42,12 @@ nav {
 /* Navigation Links */
 .nav-links {
     display: flex;
-}
+        gap: 20px;  /* Adds even spacing between links */
+    align-items: center;
+    margin-right: 20px; /* Ensures links don't stick too far to the right */
 
+
+}
 .nav-links a {
     color: #5D4037;
     text-decoration: none;
@@ -194,6 +198,7 @@ nav {
     box-shadow: 0 0 10px rgba(255, 152, 0, 0.3);
 }
 
+
 /* Textarea Styling */
 .order-form textarea {
     resize: vertical;
@@ -237,6 +242,3 @@ footer {
     padding: 25px;
     font-weight: bold;
 }
-
-
-
