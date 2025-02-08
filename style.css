@@ -1,342 +1,207 @@
-<style>
-body {
-    font-family: 'Poppins', sans-serif;
+/* 🌟 General Styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #fff8e1;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fffbe6;
     color: #333;
 }
 
-/* Fixed Navigation Bar */
+/* 🟡 Navigation Bar */
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #FFD700;
-    padding: 10px 20px;
+    background: #ffcc00;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo & Brand Name */
 .nav-logo {
     display: flex;
     align-items: center;
 }
 
 .nav-logo img {
-    height: 50px;  
-    width: auto;
-    margin-right: 10px; 
+    height: 40px;
+    margin-right: 10px;
 }
 
 .brand-name {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
-    color: #5D4037;
-}
-
-/* Navigation Links */
-.nav-links {
-    display: flex;
-    gap: 20px;  
-    align-items: center;
-    margin-right: 20px; 
 }
 
 .nav-links a {
-    color: #5D4037;
+    margin: 0 15px;
     text-decoration: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    transition: background 0.3s, color 0.3s;
+    color: #000;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
-    background: #ff9800;
-    color: white;
-    border-radius: 5px;
+    color: #ff6600;
 }
 
-/* ✅ Fixed Hero Section */
+/* 🎯 Hero Section */
 .hero {
-    background: url('mango.png') center/cover no-repeat;
-    height: 650px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    width: 100%;
+    padding: 50px 20px;
+    background: #ffcc00;
+    color: #000;
 }
 
 .hero h1 {
-    font-size: 36px;
-    font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    margin: 0;
-    width: 80%;
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
 .hero h5 {
-    font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    margin-top: 15px;
-    width: 80%;
-    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
 }
 
-/* Menu Section */
+/* 🍹 Menu Section */
 .menu {
     text-align: center;
     padding: 50px 20px;
-    background: #FFF3E0;
 }
 
 .menu h2 {
-    font-size: 36px;
+    font-size: 28px;
     margin-bottom: 20px;
-    color: #ff9800;
 }
 
 .menu-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    justify-content: center;
     gap: 20px;
-    padding: 20px;
+    flex-wrap: wrap;
 }
 
 .menu-item {
-    background: #4CAF50;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
+    width: 200px;
+    text-align: center;
 }
 
 .menu-item img {
     width: 100%;
-    max-width: 250px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s ease, opacity 0.5s ease; /* Add transition */
 }
 
-/* Hover Effect on Menu Item */
-.menu-item:hover img {
-    transform: translateY(-100%); /* Slide the image up */
-    opacity: 0; /* Fade out the image */
+.menu-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
 }
 
 .menu-item .description {
-    position: absolute;
-    top: 45%; 
-    left: 50%; 
-    right: 50%; 
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 17px;
-    text-align: center; /* Justify the text */
-    padding: 20px; /* Increase padding for more space */
-    width: 90%; /* Increase width to fit more text */
-    height: auto; /* Allow it to expand as needed */
-    border-radius: 10px; /* Slightly rounded edges for a cleaner look */
-    opacity: 0;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    font-family: 'Poppins', sans-serif; /* Consistent with the website font */
-    font-weight: 500; /* Slightly bolder for better contrast */
-    line-height: 1.6; /* Increase line height for readability */
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
 }
 
-
-/* Show Description on Hover */
-.menu-item:hover .description {
-    opacity: 1;
-    transform: translate(-50%, -50%); /* Keep it centered even when visible */
-}
-
-/* Menu Item Title */
-.menu-item h3 {
-    margin-top: 10px;
-    color: #FFF;
-}
-
-/* Centered & Even Order Form */
+/* 🛒 Order Form */
 .order-form {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 30px;
-    background: #fff8e1;
-    border-radius: 12px;
-    border: 2px solid #ff9800;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
+    padding: 50px 20px;
+    background: #fff;
 }
 
-/* Form Title */
 .order-form h2 {
-    color: #ff9800;
-    margin-bottom: 20px;
     font-size: 28px;
-    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-/* Form Labels */
+.order-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 .order-form label {
-    display: block;
-    font-weight: bold;
-    color: #5D4037;
-    text-align: left;
-    margin-bottom: 8px;
-}
-
-.order-form input,
-.order-form textarea,
-.order-form select {
-    width: 80%;
-    padding: 14px;
-    margin-bottom: 15px;
-    border: 2px solid #ff9800;
-    border-radius: 10px;
     font-size: 16px;
-    background: #fffaf3;
-    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    align-self: flex-start;
 }
 
-/* Focus Effect */
-.order-form input:focus,
-.order-form textarea:focus,
-.order-form select:focus {
-    border-color: #ff9800;
-    outline: none;
-    box-shadow: 0 0 10px rgba(255, 152, 0, 0.3);
-}
-
-
-/* Textarea Styling */
+.order-form input, 
+.order-form select, 
 .order-form textarea {
-    resize: vertical;
-    height: 100px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
+.order-form textarea {
+    resize: none;
+}
 
-/* Flexbox for Drink & Quantity */
 .flex-container {
     display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
 }
 
-/* Adjust width to align properly */
 .flex-container div {
-    flex: 1;
-    min-width: 250px;
+    width: 48%;
 }
 
-/* Quantity Selector Container */
+/* ➕ Quantity Button */
 .quantity-container {
     display: flex;
     align-items: center;
-    gap: 5px;
     justify-content: center;
-    margin-top: 10px;
+    gap: 10px;
 }
 
-/* Plus and Minus Buttons */
 .quantity-container button {
-    background: #ff9800;
-    color: white;
+    background: #ffcc00;
     border: none;
     padding: 8px 12px;
-    font-size: 16px;
-    font-weight: bold;
     cursor: pointer;
-    border-radius: 6px;
-    transition: background 0.3s, transform 0.2s;
-    width: 32px;
-    height: 32px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Hover & Active Effects */
-.quantity-container button:hover {
-    background: #e68900;
-}
-
-.quantity-container button:active {
-    transform: scale(0.95);
-}
-
-/* Input Field */
-.quantity-container input {
-    width: 50px;
-    text-align: center;
-    font-size: 16px;
-    padding: 8px;
-    border: 2px solid #ff9800;
-    border-radius: 6px;
-    font-weight: bold;
-    background: #fffaf3;
-    color: #5D4037;
-    outline: none;
-    transition: box-shadow 0.3s ease;
-}
-
-/* Focus Effect */
-.quantity-container input:focus {
-    box-shadow: 0 0 8px rgba(255, 152, 0, 0.5);
-}
-
-
-/* Submit Button */
-.order-form button {
-    width: 100%;
-    padding: 14px;
-    background: #ff9800;
-    color: white;
     font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-    transition: background 0.3s, transform 0.2s;
+    border-radius: 5px;
 }
 
-/* Hover Effect */
-.order-form button:hover {
-    background: #e68900;
-    transform: scale(1.05);
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .order-form {
-        width: 90%;
-        padding: 20px;
-    }
-}
-
-/* Footer */
-footer {
-    background: linear-gradient(to right, #5D4037, #FFB300);
+.quantity-container button:hover {
+    background: #ff6600;
     color: white;
-    text-align: center;
-    padding: 25px;
-    font-weight: bold;
 }
+
+.order-form button {
+    background: #ffcc00;
+    color: black;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.order-form button:hover {
+    background: #ff6600;
+    color: white;
+}
+
+/* 📞 Footer */
+footer {
+    background: #ffcc00;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #000;
+}
+
