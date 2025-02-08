@@ -231,6 +231,21 @@ nav {
 }
 
 
+/* Flexbox for Drink & Quantity */
+.flex-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Adjust width to align properly */
+.flex-container div {
+    flex: 1;
+    min-width: 250px;
+}
+
 /* Quantity Selector Container */
 .quantity-container {
     display: flex;
