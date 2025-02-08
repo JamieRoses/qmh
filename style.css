@@ -285,25 +285,6 @@ nav {
     box-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
 }
 
-/* Submit Button */
-.submit-btn {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background: #ff9800;
-    color: white;
-    font-size: 18px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-/* Hover Effect */
-.submit-btn:hover {
-    background: #e68900;
-    transform: scale(1.05);
-}
-
 
 /* Submit Button */
 .order-form button {
