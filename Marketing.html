@@ -75,10 +75,26 @@
             <label for="address">Delivery Address</label>
             <textarea id="address" name="address" rows="3" required></textarea>
 
-            <label for="order"> Drink </label>
-            <select id="order" name="order">
-                <option value="Mango">Mango Tapioca</option>
-            </select>
+<div class="flex-container">
+    <!-- Drink Selection -->
+    <div>
+        <label for="order">Drink</label>
+        <select id="order" name="order">
+            <option value="Mango">Mango Tapioca</option>
+        </select>
+    </div>
+
+    <!-- Quantity Selector -->
+    <div>
+        <label for="quantity">How many PCS?</label>
+        <div class="quantity-container">
+            <button type="button" onclick="decreaseQuantity()">−</button>
+            <input type="number" id="quantity" name="quantity" value="1" min="1">
+            <button type="button" onclick="increaseQuantity()">+</button>
+        </div>
+    </div>
+</div>
+
 
             <label for="order"> Sizes </label>
             <select id="order" name="order">
