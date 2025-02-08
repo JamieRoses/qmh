@@ -235,7 +235,7 @@ nav {
 .quantity-container {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
     justify-content: center;
     margin-top: 10px;
 }
@@ -245,15 +245,18 @@ nav {
     background: #ff9800;
     color: white;
     border: none;
-    padding: 10px 15px;
-    font-size: 20px;
+    padding: 8px 12px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 6px;
     transition: background 0.3s, transform 0.2s;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Hover & Active Effects */
@@ -267,12 +270,12 @@ nav {
 
 /* Input Field */
 .quantity-container input {
-    width: 60px;
+    width: 50px;
     text-align: center;
-    font-size: 18px;
-    padding: 10px;
+    font-size: 16px;
+    padding: 8px;
     border: 2px solid #ff9800;
-    border-radius: 8px;
+    border-radius: 6px;
     font-weight: bold;
     background: #fffaf3;
     color: #5D4037;
@@ -282,7 +285,7 @@ nav {
 
 /* Focus Effect */
 .quantity-container input:focus {
-    box-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
+    box-shadow: 0 0 8px rgba(255, 152, 0, 0.5);
 }
 
 
