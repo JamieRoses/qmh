@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mango Fusion - Fresh Mangoes & More</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- External CSS -->
 </head>
 <body>
 
@@ -29,37 +29,39 @@
         <h5>#PrinciplesofMarketing <br> #Gueta</h5>
     </section>
 
-   <section id="menu" class="menu">
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
         <h2>Our Special Mango Toppings</h2>
         <div class="menu-items">
             <div class="menu-item"> 
                 <img src="sago.png" alt="Tapioca"> 
                 <h3>Tapioca</h3> 
-                <div class="description">A tapioca pearl is a translucent sphere produced from tapioca, a starch made from the cassava root. A delightful chewy topping that pairs perfectly with your mango drink.</div>
+                <div class="description">A delightful chewy topping that pairs perfectly with your mango drink.</div>
             </div>
             <div class="menu-item"> 
                 <img src="TOPNA.png" alt="Nata De Coco"> 
                 <h3>Nata De Coco</h3> 
-                <div class="description">Nata de coco is a unique Filipino specialty that is made with fermented coconut water. A sweet, chewy coconut jelly pieces that add texture to your drink.</div>
+                <div class="description">Sweet, chewy coconut jelly pieces that add texture to your drink.</div>
             </div>
             <div class="menu-item"> 
                 <img src="TOPOR.png" alt="Crushed Oreo"> 
                 <h3>Crushed Oreo</h3> 
-                <div class="description">The original Oreo cookie crushed in small pieces cream-free, ready to use for your recipes. A crunchy and sweet twist that complements mango perfectly.</div>
+                <div class="description">A crunchy and sweet twist that complements mango perfectly.</div>
             </div>
             <div class="menu-item"> 
                 <img src="TOPGR.png" alt="Crushed Graham"> 
                 <h3>Crushed Graham</h3> 
-                <div class="description">Graham cracker crumbs are made by crushing graham crackers, a type of flat and crisp cookie made with graham flour and sweetened with honey. A delightful blend of graham crumbs for added flavor and crunch.</div>
+                <div class="description">A delightful blend of graham crumbs for added flavor and crunch.</div>
             </div>
             <div class="menu-item"> 
                 <img src="TOPMA.png" alt="Marshmallows"> 
                 <h3>Marshmallows</h3> 
-                <div class="description"> Marshmallows are made of sugar, corn syrup, water and gelatin. Soft, fluffy marshmallows that melt perfectly in your drink.</div>
+                <div class="description">Soft, fluffy marshmallows that melt perfectly in your drink.</div>
             </div>
         </div>
     </section>
 
+    <!-- Order Form -->
     <section id="order" class="order-form">
         <h2>Order Now</h2>
         <form action="https://formspree.io/f/xjkgwqzo" method="POST">
@@ -75,44 +77,41 @@
             <label for="address">Delivery Address</label>
             <textarea id="address" name="address" rows="3" required></textarea>
 
-<div class="flex-container">
-    <!-- Drink Selection -->
-    <div>
-        <label for="order">Drink</label>
-        <select id="order" name="order">
-            <option value="Mango">Mango Tapioca</option>
-        </select>
-    </div>
+            <div class="flex-container">
+                <!-- Drink Selection -->
+                <div>
+                    <label for="order">Drink</label>
+                    <select id="drink" name="drink">
+                        <option value="Mango">Mango Tapioca</option>
+                    </select>
+                </div>
 
-    <!-- Quantity Selector -->
-    <div>
-        <label for="quantity">How many PCS?</label>
-        <div class="quantity-container">
-            <button type="button" onclick="decreaseQuantity()">−</button>
-            <input type="number" id="quantity" name="quantity" value="1" min="1">
-            <button type="button" onclick="increaseQuantity()">+</button>
-        </div>
-    </div>
-</div>
+                <!-- Quantity Selector -->
+                <div>
+                    <label for="quantity">How many PCS?</label>
+                    <div class="quantity-container">
+                        <button type="button" onclick="decreaseQuantity()">−</button>
+                        <input type="number" id="quantity" name="quantity" value="1" min="1">
+                        <button type="button" onclick="increaseQuantity()">+</button>
+                    </div>
+                </div>
+            </div>
 
-
-            <label for="order"> Sizes </label>
-            <select id="order" name="order">
+            <label for="size">Sizes</label>
+            <select id="size" name="size">
                 <option value="₱25 Small">₱25 Small (12oz)</option>
                 <option value="₱49 Medium">₱49 Medium (16oz)</option>
                 <option value="₱65 Large">₱65 Large (22oz)</option>
             </select>
 
-    
-            
-            <label for="order"> Topping Add-Ons </label>
-            <select id="order" name="order">
+            <label for="toppings">Topping Add-Ons</label>
+            <select id="toppings" name="toppings">
                 <option value="None">None</option>
                 <option value="+₱10 Extra Tapioca">+₱10 Extra Tapioca</option>
-                <option value="+₱10 Whipped Cream"> +₱10 Whipped Cream</option>
+                <option value="+₱10 Whipped Cream">+₱10 Whipped Cream</option>
                 <option value="+₱10 Marshmallows">+₱10 Marshmallows</option>
-                <option value="+₱15 Crushed oreo">+₱15 Crushed oreo</option>
-                <option value="+₱15Crushed graham">+₱15 Crushed graham</option>
+                <option value="+₱15 Crushed Oreo">+₱15 Crushed Oreo</option>
+                <option value="+₱15 Crushed Graham">+₱15 Crushed Graham</option>
             </select>
 
             <button type="submit">Place Order</button>
@@ -126,6 +125,22 @@
         <p>© 2025 Mango Tapioca Fusion. All Rights Reserved.</p>
     </footer>
 
+    <!-- ✅ JavaScript placed at the bottom to ensure it runs after page loads -->
+    <script>
+        // Increase quantity
+        function increaseQuantity() {
+            let quantityInput = document.getElementById("quantity");
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        }
+
+        // Decrease quantity (prevent going below 1)
+        function decreaseQuantity() {
+            let quantityInput = document.getElementById("quantity");
+            if (parseInt(quantityInput.value) > 1) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+            }
+        }
+    </script>
+
 </body>
 </html>
-
