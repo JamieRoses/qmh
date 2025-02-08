@@ -103,27 +103,7 @@
                 <option value="₱59 Large">₱59 Large (22oz)</option>
             </select>
 
-        <label for="quantity">How many PCS?</label>
-        <div class="quantity-container">
-            <button type="button" onclick="decreaseQuantity()">−</button>
-            <input type="number" id="quantity" name="quantity" value="1" min="1">
-            <button type="button" onclick="increaseQuantity()">+</button>
-        </div>
-
-
-    <script>
-        function increaseQuantity() {
-            let quantity = document.getElementById("quantity");
-            quantity.value = parseInt(quantity.value) + 1;
-        }
-
-        function decreaseQuantity() {
-            let quantity = document.getElementById("quantity");
-            if (quantity.value > 1) {
-                quantity.value = parseInt(quantity.value) - 1;
-            }
-        }
-    </script>
+    
             
             <label for="order"> Topping Add-Ons </label>
             <select id="order" name="order">
