@@ -230,6 +230,81 @@ nav {
     height: 100px;
 }
 
+
+/* Quantity Selector Container */
+.quantity-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Plus and Minus Buttons */
+.quantity-container button {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+/* Hover & Active Effects */
+.quantity-container button:hover {
+    background: #e68900;
+}
+
+.quantity-container button:active {
+    transform: scale(0.95);
+}
+
+/* Input Field */
+.quantity-container input {
+    width: 60px;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #ff9800;
+    border-radius: 8px;
+    font-weight: bold;
+    background: #fffaf3;
+    color: #5D4037;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Focus Effect */
+.quantity-container input:focus {
+    box-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
+}
+
+/* Submit Button */
+.submit-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ff9800;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.submit-btn:hover {
+    background: #e68900;
+    transform: scale(1.05);
+}
+
+
 /* Submit Button */
 .order-form button {
     width: 100%;
